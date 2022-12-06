@@ -1,7 +1,7 @@
 import zombiedice
 
 class MyZombie:
-    def _init_(self,name):
+    def __init__(self,name):
         #All zombies need a name
         self.name = name
 
@@ -25,7 +25,7 @@ zombies = (
     zombiedice.examples.RollsUntilInTheLeadZombie(name='Until Leading'),
     zombiedice.examples.MinNumShotgunsThenStopsZombie(name='Stop at 2 Shotguns', minShotguns = 2),
     zombiedice.examples.MinNumShotgunsThenStopsZombie(name='Stop at 1 Shotgun', minShotguns = 1),
-    MyZombie(),
+    MyZombie(name="Justin"),
     # add other zombie players here
 
 )
